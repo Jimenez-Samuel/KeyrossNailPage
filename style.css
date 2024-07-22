@@ -369,3 +369,65 @@ iframe{
   align-items: start;
   justify-content: space-around;
 }
+.payment-card{
+  width: 90vw;
+  height: 500px;
+  background-color: #d0a403;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.payment-zone{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+.card-content-pay{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  background-color: #242424;
+  height: 300px;
+  width: 23%;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+.payment-zone h1{
+  color: #d0a403;
+  font-size: 50px;
+  font-family: 'Cormorant Garamond', sans-serif;
+}
+.card-content-pay img{
+  width: 150px;
+  height: auto;
+}
+.card-content-pay img.billete{
+  height: 150px;
+  width: auto;
+}
+.card-content-pay img.tarjeta{
+  width: 250px;
+  height: 125px;
+}
+.card-content-pay img.tarjeta2{
+  width: 300px;
+  height: 150px;
+}
+.card-content-pay img.yape{
+  border-radius: 10px;
+}
+.card-p{
+  margin-top: 45px;
+}
