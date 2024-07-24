@@ -77,7 +77,7 @@ iframe{
 .main-header{
   height: 75px;
   background-color: #d0a403;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,10 +90,6 @@ iframe{
   border-radius: 0 0 50px 50px;
   transition: all 0.5s ease;
   color: #000;
-}
-.main-header:hover{
-  background-color: #000;
-  color: #d0a403;
 }
 .main-header img:hover{
   transform: scale(1.1);
@@ -370,7 +366,7 @@ iframe{
   justify-content: space-around;
 }
 .payment-card{
-  width: 90vw;
+  width: 100vw;
   height: 500px;
   background-color: #d0a403;
   border-radius: 20px;
@@ -386,8 +382,6 @@ iframe{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-bottom: 20px;
 }
 .card-content-pay{
@@ -430,4 +424,94 @@ iframe{
 }
 .card-p{
   margin-top: 45px;
+}
+
+@media screen and (max-width: 1777px){
+  .main-zone-content{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1020px){
+  .main-zone-content{
+    width: 100%;
+  }
+  .main-zone img{
+    width: 40%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .card-content-pay{
+    width: 80%;
+    background-color: #d0a403;
+    color: #000;
+    font-weight: 700;
+  }
+  .payment-card{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: #242424;
+  }
+  .payment-zone{
+    padding: 0;
+    background-color: #242424;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .slide-image{
+    width: 90vw;
+  }
+  .move-button{
+    position: absolute;
+    z-index: 15;
+  }
+  .prev-button{
+    left: 0px;
+  }
+  .next-button{
+    right: 0px;
+  }
+  .desing-zone, .about-me-zone{
+    padding-bottom: 100px;
+  }
+  .cards-container{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 690px){
+  .main-zone-content{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .qxCTlb{
+    margin-left: 15px;
+  }
+  .main-zone-content h1{
+    text-align: center;
+  }
+  .main-zone img{
+    display: none;
+  }
+}
+
+@media screen  and (max-width: 580px) {
+  .main-header .normal-button{
+    font-size: 15px;
+  }
+  .main-header .normal-button:hover{
+    font-size: 17px;
+  }
 }
