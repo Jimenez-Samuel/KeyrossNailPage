@@ -22,6 +22,8 @@ body{
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
 }
 body::-webkit-scrollbar{
   background-color: #474747;
@@ -31,6 +33,14 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
   background-color: #aeaeae;
   height: 10px;
+}
+img.load-text{
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  z-index: 8000;
+  top: 20vh;
+  left: 37vw;
 }
 #app{
   overflow-x: hidden;
@@ -77,7 +87,7 @@ body::-webkit-scrollbar-thumb{
 .main-header{
   height: 75px;
   background-color: #d0a403;
-  width: 98%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;

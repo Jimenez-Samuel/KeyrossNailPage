@@ -4,7 +4,14 @@ const prevButton = document.querySelector('.prev-button')
 
 const bars = document.querySelectorAll('.bar')
 
+const bg = document.querySelector('.load-zone')
+const loadText = document.querySelector('.load-text')
+
 let currentSlide = 0
+
+let load = 0
+
+const int = setInterval(borroso, 30)
 
 for (let i = 0; i < bars.length; i++) {
   bars[i].addEventListener('click', () => {
@@ -50,4 +57,19 @@ function addBar () {
     bars[i].classList.remove('active')
   }
   bars[currentSlide].classList.add('active')
+}
+
+function borroso () {
+  load++
+
+  if (load > 99) {
+    clearInterval(int)
+  }
+
+  loadText.style.opacity = scale(load, 0, 100, 1, 0)
+  bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
+}
+
+function scale (number, inMin, inMax, outMin, outMax) {
+  return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin
 }
