@@ -64,6 +64,7 @@ function borroso () {
 
   if (load > 99) {
     clearInterval(int)
+    loadText.style.display = 'none'
   }
 
   loadText.style.opacity = scale(load, 0, 100, 1, 0)
