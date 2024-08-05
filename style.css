@@ -22,8 +22,6 @@ body{
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  justify-content: center;
-  align-items: center;
 }
 body::-webkit-scrollbar{
   background-color: #474747;
@@ -37,7 +35,7 @@ body::-webkit-scrollbar-thumb{
 img.load-text{
   width: 350px;
   height: 350px;
-  position: absolute;
+  position: fixed;
   z-index: 8000;
   top: 0;
   left: 0;
@@ -90,7 +88,7 @@ img.load-text{
 }
 .main-header{
   height: 75px;
-  background-color: #d0a403;
+  background-color: transparent;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -534,7 +532,7 @@ img.load-text{
 
 @media screen and (max-width: 480px){
   .main-header .normal-button{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
   }
   .main-header .normal-button:hover{

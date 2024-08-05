@@ -62,6 +62,8 @@ function addBar () {
 function borroso () {
   load++
 
+  window.scrollTo(0, 0)
+
   if (load > 99) {
     clearInterval(int)
     loadText.style.display = 'none'
