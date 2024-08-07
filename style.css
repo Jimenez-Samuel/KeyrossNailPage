@@ -142,7 +142,7 @@ img.load-text{
   width: 95px;
   height: 95px;
   position: absolute;
-  top: 95px;
+  top: 100px;
 }
 .main-background{
   background-color: #242424;
@@ -218,6 +218,7 @@ img.load-text{
   justify-content: center;
   text-align: center;
   margin-left: 60px;
+  margin-top: 40px;
 }
 .main-zone-content h1{
   font-weight: 700;
