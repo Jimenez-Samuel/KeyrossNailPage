@@ -583,6 +583,12 @@ img.load-text{
   }
 }
 
+@media screen and (max-width: 370px) {
+  .main-zone h1{
+    margin-top: 100px;
+  }
+}
+
 @media screen and (max-width: 360px) {
   .main-header .second-list{
     display: flex;
